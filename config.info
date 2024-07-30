@@ -1,0 +1,10 @@
+imap_port=Cyrus-IMAP server Port (normally 143),0
+admin_user=Cyrus-IMAP server Admin User,5
+admin_password=Cyrus-IMAP server Admin Password,16
+cyrus_conf_path=Path to cyrus.conf,8    
+imapd_conf_path=Path to imapd.conf,8
+imap_path=IMAP working directory,7
+lib_path=Cyrus utilities and libraries path,7  
+initscript=Script to start/stop Cyrus-IMAP server,8
+sync_mbox=Synchronize creation/deletion of mailboxes and system accounts?,1,1-Yes,0-No
+chkupdate=Check for new releases?,1,1-Yes,0-No

@@ -1,0 +1,5 @@
+name=CyrusImap
+desc=Cyrus IMAP Server
+category=servers
+depends=1.380
+version=1.6.8

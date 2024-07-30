@@ -1,0 +1,99 @@
+Roberto Tecchio <roberto@tecchio.net>
+
+* Version 1.6.8   2008-11-28
+    - recheck quotas on single mailbox or all mailboxes
+    - doesn't require anymore the CGI module
+
+* Version 1.6.5   2008-3-24
+    - fixed a bug in usign alternate imap port
+        (thanks to Per Holm)
+
+* Version 1.6.3   2007-12-18
+    - now the module works also with symlinks instead of original libraries
+
+* Version 1.6.2   2007-9-6
+    - fixed a bug in assigning quota
+
+* Version 1.6   2007-5-4
+    - added virtual domains support (mailboxes with '@domain'), with defaultdomain included
+        (thanks to Camel Master <camro@gmx.at>)
+    - fixed a bug in permissions while deleting mailboxes
+
+* Version 1.5   2007-3-8
+    - Tree structure of mailboxes has been totally rewritten 
+        based on Perl module Tree::Simple from CPAN
+        (thanks to Murray Trainer <mtrainer@central-data.net>)
+    - added a check for mailbox permissions to 'reconstruct' command
+
+* Version 1.4.5   2006-11-28
+    - fixed a bug when changing quota on mailboxes with similar names
+        (thanks to Murray Trainer <mtrainer@central-data.net>)
+
+* Version 1.4.4   2006-11-3
+    - requires Webmin 1.240 for using 'ui_bytesbox' function in ui-lib.pl
+
+* Version 1.4.3   2006-3-29
+    - Bytesbox in quota input
+    - fixed a bug in useradmin_update.pl (default quota in new mbox)
+
+* Version 1.4.2   2006-3-11
+    - Improved german translation by Boris Folgmann <boris@folgmann.de>
+    - Temporarily removed virtual domains configuration 
+            (bug found by Daniel Dupont <daniel.dupont@altella.fr>) 
+    - Forced sasl_mech_list = PLAIN in configuration
+            (suggested by Sasa Stupar <sasa@stupar.homelinux.net>)
+    - Added autocreatequota in configuration
+            (suggested by Boris Folgmann <boris@folgmann.de>)
+
+* Version 1.4.1   2006-3-1
+    - Fixed a bug in create_links.pl (Debian patch) 
+       Thanks to Luc Milland <lmilland@praksys.org>
+
+* Version 1.4   2006-02-09
+    - Default quota for new mailboxes in module configuration
+    - Gets the correct mailbox separator character (even if no mbox exists)
+
+* Version 1.3.1   2005-11-18
+    - Fixed a bug in user selection window 
+	(thanks to Matthias Schroeder - mschroeder@alltrotec.de)
+
+* Version 1.3   2005-11-12
+    - Activate/deactivate services (imap, imaps, pop3, etc.)
+    - Fixed a bug in synchronization of system accounts
+
+* Version 1.2	2005-10-31
+    - Copy, rename and move mailboxes or folders
+    - Improved listing of operations while managing mailboxes
+
+* Version 1.1	2005-10-14
+    - Show version numbers and check for online updates
+
+* Version 1.0	2005-10-12
+    - Start/stop the Cyrus IMAP server
+    - Manage some configuration parameters
+    - Create/delete imap partitions
+    - Assign mailboxes to partitions and move mailboxes between partitions
+    - Rebuild mailboxes
+    - Delete quotas
+    - User customizable frame width
+    - Added webmin logging
+    - Added create_links script for Debian (and other) users
+
+* Version 0.7   2005-09-22
+    - German translation by Daniel Schulz <dlsz@gmx.net>
+
+* Version 0.6	2005-09-20
+    - Fixed a bug in splitting mailbox names by a separator
+    - Use of international characters (UTF-8) in mailbox names
+    (Suggestions by Matthias Schroeder - mschroeder@alltrotec.de)
+
+* Version 0.5   2005-09-15
+    - Synchronization of mailbox creation/deletion with system accounts
+    - Shared mailboxes marked with italic font, user mailboxes with normal font
+
+* Version 0.4   2005-08-19
+    - Manage the Mailboxes and Folders:
+	- Pick the mailboxes from an easy 'tree' interface;
+	- Create / Delete mailboxes and folders;
+	- Set quotas;
+	- Manage the ACLs on the mailboxes/folders

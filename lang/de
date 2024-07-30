@@ -1,0 +1,63 @@
+index_title=Cyrus IMAP-Server
+homepage=Modul-Startseite
+start_cyrus=Cyrus IMAP-Server starten
+stop_cyrus=Cyrus IMAP-Server anhalten
+stop_err=Fehler beim Anhalten des Cyrus IMAP-Servers
+start_err=Fehler beim Starten des Cyrus IMAP-Servers
+
+not_found=nicht gefunden
+unable_connect=Kann keine Verbindung herstellen zum Cyrus IMAP-Server
+unable_auth=Cyrus IMAP-Server nicht erreichbar als Benutzer
+go_to_config=Entweder der Cyrus IMAP-Server ist nicht installiert, läuft nicht oder die <A HREF="/config.cgi?cyrus-imapd">Modulkonfiguration</A> ist falsch.
+new_release=Neue Version verfügbar.
+
+config=Konfiguration
+partitions=IMAP-Partitionen
+mbox_tree=Mailbox-Baum
+backup=Backup/Wiederherstellen
+
+activeservices=Aktive Dienste
+defaultpartition=Standard-Partition
+sasl_pwcheck_method=SASL-Authentisierungsmethode
+allowanonymouslogin=Anonymes Anmelden erlaubt 
+unixhierarchysep=Ordnernamen-Trennzeichen
+hashimapspool=IMAP-Partitionen hashen (schneller)
+quotawarn=Prozentsatz der Quota-Nutzung ab dem gewarnt wird
+altnamespace=Alternativer Namensraum
+sharedprefix=Pr&auml;fix für gesharte Ordner
+virtdomains=Virtuelle Domain verwenden
+defaultdomain=Standard-Domain
+localdomains=Lokale Domainen
+update=&Auml;nderungen speichern
+apply=&Auml;nderungen speichern
+numbers_only=Bitte nur Zahlen eingeben
+numbers_between=Bitte nur Zahlen zwischen
+
+name=Name
+path=Pfad
+folders=Ordner
+delete_partition=Warnung: Wollen Sie wirklich diese Partition l&ouml;schen?
+
+create_mbox=Mailbox erstellen
+subfolder=Unterordner
+partition=Partition
+create=Erstellen
+mbox_user=Mailbox des Benutzers
+this_mbox=diese Mailbox/diesen Ordner
+unknown_mbox=Unbekannte Mailbox
+rebuild=Anzeige aktualisieren
+requota2=erneut Quoten
+requota1=erneut Quota
+delete=L&ouml;schen
+set=Setzen
+set_quota=Setze Quota
+used=Benutzt
+user=Benutzer
+messages=Nachrichten
+mbox_size=Gr&ouml;&szlig;e der Mailbox
+folder_size=Gr&ouml;&szlig;e den Ordner
+remove=Entfernen
+conf_del_mailbox=Warnung: Wollen Sie wirklich diese Mailbox/diesen Ordnerl&ouml;schen?
+conf_del_acl=Wollen Sie wirklich die ACLs entfernen f&uuml;r den Benutzer
+
+no_perl_libs=St&ouml;rung: einige Perl Module fehlen

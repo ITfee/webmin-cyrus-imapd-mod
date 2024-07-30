@@ -1,0 +1,68 @@
+index_title=Cyrus IMAP server
+homepage=home page del modulo
+start_cyrus=Avvia il server Cyrus IMAP
+stop_cyrus=Ferma il server Cyrus IMAP
+stop_err=Errore nell'arresto di Cyrus IMAP
+start_err=Errore nell'avvio di Cyrus IMAP
+
+not_found=non trovato
+unable_connect=Impossibile connettersi al server Cyrus-IMAP su
+unable_auth=Nel server Cyrus-IMAP non esiste un utente
+go_to_config=Forse non &egrave; installato, non &egrave; avviato, oppure la <A HREF="/config.cgi?cyrus-imapd">configurazione del modulo</A> non &egrave; corretta.
+new_release=scarica la nuova release
+
+config=Configurazione
+partitions=Partizioni IMAP
+mbox_tree=Albero delle Mailbox
+backup=Backup/Restore
+
+activeservices=servizi attivi
+defaultpartition=partizione di default
+sasl_pwcheck_method=metodo di autenticazione SASL
+allowanonymouslogin=accetta login anonimo
+hashimapspool=cripta le mailbox
+autocreatequota=quota di default per nuove mailbox
+quotawarn=limite di quota oltre cui inviare avvisi
+unixhierarchysep=separatore dei nomi delle mailbox
+altnamespace=usa spazio dei nomi alternativo
+sharedprefix=prefisso per le cartelle condivise
+virtdomains=usa domini virtuali
+defaultdomain=dominio principale
+localdomains=domini locali
+update=salva modifiche
+apply=applica modifiche
+numbers_only=inserire solo numeri
+numbers_between=solo numeri nell'intervallo
+
+name=nome
+path=percorso
+folders=cartelle
+delete_partition=ATTENZIONE: vuoi veramente eliminare questa partizione?
+
+create_mbox=crea mailbox
+subfolder=sottocartella
+partition=partizione
+create=crea
+mbox_user=mailbox utente
+set=aggiorna
+set_quota=imposta quota
+this_mbox=questa mailbox/cartella
+unknown_mbox=mailbox sconosciuta
+copy_mbox=copia in
+copy=copia
+move_mbox=sposta in
+move=sposta
+delete=elimina
+rebuild=ricostruisci
+requota1=ricalcola quota
+requota2=ricalcola quote
+used=usata
+user=utente
+messages=messaggi
+mbox_size=dimensione mailbox
+folder_size=dimensione cartella
+remove=rimuovi
+conf_del_mailbox=ATTENZIONE: vuoi veramente eliminare questa mailbox/cartella?
+conf_del_acl=Vuoi veramente rimuovere le ACL dell'utente
+    
+no_perl_libs=Errore: mancano alcuni moduli Perl

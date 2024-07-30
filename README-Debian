@@ -1,0 +1,24 @@
+NOTE FOR DEBIAN (and possibily other) USERS
+-------------------------------------------
+
+There is a problem by using this module, and almost any other 3rd party modules for Webmin, in a Debian installation. 
+The Webmin 'deb' package included in a Debian distribution installs the standard Webmin modules in /usr/share/webmin, and the 3rd party modules in /usr/local/share/webmin. 
+This doesn't work correctly (although that is the standard layout in Debian filesystem), for almost ANY 3rd party module needs to call the web-lib.pl which reside in the Webmin directory, supposing this to be its parent directory.
+For example, a 3rd party module named 'wine' will be installed in /usr/local/share/webmin/wine; from that directory it calls '../web-lib.pl', but in the parent directory /usr/local/share/webmin such a file doesn't exist! It's instead in /usr/share/webmin!
+Moreover, many 3rd modules needs also the 'ui-lib.pl' library, and that's the same problem.
+Finally, that implementation of Webmin doesn't store correctly the initial config files, so in many cases you have to fill in the module configuration by yourself.
+
+SOLUTIONS:
+
+a) DO NOT USE the Webmin 'deb' packages included in Debian distributions!
+Download instead the original tar.gz file directly from www.webmin.com, unpack it, enter its directory, and type:
+
+./setup.sh /usr/share/webmin
+
+So you'll have Webmin installed in your lovely /usr/share/webmin directory, but fully functional, with the 3rd party modules in the same directory and the initial config file correctly stored.
+
+b) If you still want to mantain the Debian standard layout, then:
+- Install that module from Webmin;
+- After installation, enter the module directory and execute the script 'create_links.pl'. 
+This should create two symlinks 'ui-lib.pl' and 'web-lib.pl' in the parent directory, to solve the library dependencies. 
+Still, probably you'll have to fill in the module configuration by yourself.

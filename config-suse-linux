@@ -1,0 +1,9 @@
+admin_user=cyrus
+imap_port=143
+sync_mbox=1
+imapd_conf_path=/etc/imapd.conf
+cyrus_conf_path=/etc/cyrus.conf
+imap_path=/var/lib/imap
+lib_path=/usr/lib/cyrus/bin
+initscript=/etc/init.d/cyrus
+chkupdate=1

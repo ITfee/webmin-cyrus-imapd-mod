@@ -1,0 +1,25 @@
+<HEADER>Mailboxen und Ordner einrichten</HEADER> 
+<P>Eine Quote auf einem Briefkasten einstellen, gerade Art die Quotemenge.  Um eine Quote zu entfernen, tragen Sie einen nullwert ein.</P>
+
+Zum setzen der ACL's (Access Control Lists, zu deutsch "Zugangskontrolllisten") an einem Ordner::
+<UL>
+<LI> W&auml;hlen Sie einen existierenden Benutzer; oder <B>anyone</B> f&uuml;r jeden Benutzer. ;</LI>
+<LI> Folgende ACL's sind m&ouml;glich: </LI>
+    <UL>
+<LI><B>l</B> : lookup: Der Benutzer sieht, dass der Ordner existiert</LI>
+<LI><B>r </B>: read: Der Benutzer darf den Inhalt des Ordners lesen. Er darf ihn
+betreten, darin suchen und Nachrichten herauskopieren aber zB. nicht
+die Mail als "gelesen" markieren</LI>
+<LI><B>s </B>: seen: Der "Gelesen"- und "Beantwortet"-Status einer Mail wird f&uuml;r jeden Benutzer einzeln angelegt. Ein Benutzer sieht also nicht, wenn die Mail schon von einem anderen Benutzer gelesen oder beantwortet wurde. </LI>
+<LI><B>w</B>: write: Der Benutzer darf den "Gelesen"- und "Beantwortet"-Status aller anderen Benutzer &auml;ndern. Alle anderen Benutzer (die Rechte an diesem Ordner haben) sehen also, wenn die Nachricht bereits gelesen oder beantwortet wurde. </LI>
+<LI><B> i </B> : insert: Der Benutzer darf Nachrichten in den Ordner einf&uuml;gen. </LI>
+<LI><B>p </B>: post: Ein Benutzer darf in den Ordner Nachrichten senden. Zb. schickt er eine Mail an "benutzer+ordner@domain.de", diese Mail wird dann in den Unterordner "ordner" (Achtung, Gro&szlig;- und Kleinschreibung wird beachtet!) der INBOX von "benutzer" gespeichert. Dieses Recht unterscheidet sich von "i" dadurch, dass im AN:-Feld auch zB. "benutzer+ordner@domain.de" steht. </LI>
+<LI><B>c</B> : create: Der Benutzer darf Unterordner erstellen, und den Ordner l&ouml;schen oder umbenennen. </LI>
+<LI><B>d</B> : delete :
+Der Benutzer darf den "Gel&ouml;scht"-Status einer Mail f&uuml;r alle Benutzer &auml;ndern. Damit wird die Mail bei allen Benutzern entfernt. </LI>
+<LI><B>a</B> : administer : 
+Der Benutzer darf diese ACL's am Ordner &auml;ndern und l&ouml;schen. </LI>
+</UL>
+<LI> Mit einem Klick auf "Entfernen" entfernen Sie die ACL's f&uuml;r den jeweiligen Benutzer. </LI>
+<LI> Ordner mit Umlauten sind m&ouml;glich, erscheinen aber erst im Mailclient korrekt als solche. </LI>
+</UL>

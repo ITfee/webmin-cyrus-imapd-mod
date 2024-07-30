@@ -1,0 +1,28 @@
+<HEADER>Manage the Mailboxes</HEADER>
+<P>To set a quota on a mailbox, just type the quota amount. To remove a
+quota, enter a zero value.</P>
+
+To set the ACL (Access Control Lists) on a mailbox/folder:
+<UL>
+<LI>Choose a REAL user; or type <B>anyone</B> for all users;</LI>
+<LI>Set the ACLs:</LI>
+    <UL>
+<LI><B>l</B> : lookup : The user may see that the mailbox exists</LI>
+<LI><B>r</B> : read : The user may read the mailbox. The user may select the
+        mailbox, fetch data, perform searches, and copy messages from
+        the mailbox.</LI>
+<LI><B>s</B> : seen : Keep per-user seen state. The "Seen" and "Recent" flags
+        are preserved for the user.</LI>
+<LI><B>w</B> : write : The user may modify flags and keywords other than
+        "Seen" and "Deleted" (which are controlled by other sets of
+        rights).</LI>
+<LI><B>i</B> : insert : The user may insert new messages into the mailbox.</LI>
+<LI><B>p</B> : post : The user may send mail into a subfolder in the mailbox. E.g. if anyone sends a mail to &quot;user+folder@domain.com&quot;, this mail becomes in the subfolder &quot;folder&quot; (attention, large and lower case are considered!) in the INBOX of &quot;user&quot;. This right differs from &quot;i&quot; by the fact that in the header of message also &quot;user+folder@domain.com&quot; stands.</LI>
+<LI><B>c</B> : create : The user may create new sub-mailboxes of the mailbox,
+        or delete or rename the current mailbox.</LI>
+<LI><B>d</B> : delete : The user may store the "Deleted" flag, and perform
+        expunges.</LI>
+<LI><B>a</B> : administer : The user may change the ACL on the mailbox.</LI>
+</UL>
+<LI>click on remove to delete the ACLs for an user</LI>
+</UL>

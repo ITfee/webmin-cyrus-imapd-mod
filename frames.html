@@ -1,0 +1,30 @@
+<HTML>
+<SCRIPT>
+function getCookie(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+    begin = dc.indexOf(prefix);
+    if (begin != 0) return null;
+  } else
+    begin += 2;
+  var end = document.cookie.indexOf(";", begin);
+  if (end == -1)
+    end = dc.length;
+  return unescape(dc.substring(begin + prefix.length, end));
+}
+
+function setCookie(name,value)
+{ document.cookie = name + "=" + value + "; expires=" + expDate.toGMTString(); }
+
+var expDate = new Date();
+expDate.setDate(expDate.getDate()+365);
+
+wLeft=getCookie("wLeft");
+if (!wLeft) wLeft=35;
+wRight=100-wLeft;
+document.write("<FRAMESET COLS="+wLeft+"%,"+wRight+"% FRAMEBORDER=yes BORDER=2 FRAMESPACING=0>");
+document.write("<FRAME SRC=tree.cgi NAME=tree>\n<FRAME SRC=mbox_info.cgi NAME=mainFrame>\n</FRAMESET>");
+</SCRIPT>
+</HTML>

@@ -1,0 +1,17 @@
+In order to run this module, you need these Perl Modules:
+
+- Encode
+- HTML::Entities
+- Cyrus::IMAP
+- Mail::IMAPClient
+- Tree::Simple    
+
+The Encode module is normally included in any distribution of Perl,
+but it's also available at CPAN Library, www.cpan.org
+
+The HTML::Entities module is a submodule of perl-HTML-Parser package 
+which is included in many distributions; otherwise you can download 
+it from www.cpan.org. 
+
+The Mail::IMAPClient, Cyrus::IMAP and Tree::Simple modules are available at CPAN,
+as well as packaged for various distrubutions in RPM and DEB format.

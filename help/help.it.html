@@ -1,0 +1,27 @@
+<HEADER>Gestione delle Mailbox</HEADER>
+<P>Per impostare una quota in una mailbox, immetterne il valore. 
+Per rimuovere la quota, impostare un valore zero.</P>
+
+Per impostare le ACL (Liste di Controllo d'Accesso) su una mailbox o una cartella:
+<UL>
+<LI>scegliere un utente REALE; o digita <B>anyone</B> per tutti gli utenti;</LI>
+<LI>impostare le ACL:</LI>
+    <UL>
+<LI><B>l</B> : lookup : L'utente può vedere che la mailbox esiste;</LI>
+<LI><B>r</B> : read : L'utente può leggere la mailbox. Può selezionare la mailbox, 
+    leggerne i dati, effettuare le ricerche e copiare messaggi dalla mailbox.</LI>
+<LI><B>s</B> : seen : Mantiene lo stato dei messaggi per utente. 
+    I marcatori di "Visto" e "Recente sono mantenuti per ogni utente.</LI>
+<LI><B>w</B> : write : L'utente può modificare i marcatori e le parole chiave,
+    tranne "Visto" e "Cancellato" (che sono controllate da altre ACL)</LI>
+<LI><B>i</B> : insert : L'utente può inserire nuovi messaggi nella mailbox.</LI>
+<LI><B>p</B> : post : L'utente può inviare posta ad una sottocartella dell'indirizzo di questa mailbox. Ad es. un messaggio inviato a &quot;utente+cartella@dominio.it&quot;, verr&agrave; recapitato nella sottocartella &quot;cartella&quot; (attenzione, maiuscole e minuscole sono considerate!) della &quot;Posta in arrivo&quot; (INBOX) di &quot;utente&quot;. Ci&ograve; differisce dall'ACL "i" in quanto viene mantenuta traccia dell'indirizzo &quot;utente+cartella@dominio.it&quot; nell'intestazione del messaggio.</LI>
+<LI><B>c</B> : create : L'utente può creare sottocartelle della mailbox,
+        o cancellare e rinominare la mailbox e le sue sottocartelle.</LI>
+<LI><B>d</B> : delete : L'utente può impostare il segno di "Cancellato" nei messaggi
+    e fare cancellazioni o svuotamenti della mailbox.</LI>
+<LI><B>a</B> : administer : L'utente può modificare le ACL nella mailbox.</LI>
+</UL>
+<LI>fare clic su rimuovi per eliminare le ACL di un utente.</LI>
+<LI>fare clic su aggiorna per impostare le nuove ACL.</LI>
+</UL>

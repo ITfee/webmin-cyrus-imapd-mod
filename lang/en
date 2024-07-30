@@ -1,0 +1,68 @@
+index_title=Cyrus IMAP server
+homepage=module home page
+start_cyrus=Start the Cyrus IMAP server
+stop_cyrus=Stop the Cyrus IMAP server
+stop_err=Error stopping Cyrus IMAP
+start_err=Error starting Cyrus IMAP
+
+not_found=not found
+unable_connect=Unable to connect to Cyrus-IMAP at 
+unable_auth=Cyrus-IMAP server cannot be reached by user 
+go_to_config=Either it's not installed, it's stopped, or the <A HREF="/config.cgi?cyrus-imapd">module configuration</A> is incorrect.
+new_release=get the new release
+
+config=Configuration
+partitions=IMAP Partitions
+mbox_tree=Mailbox tree
+backup=Backup/Restore
+
+activeservices=active services
+defaultpartition=default partition
+sasl_pwcheck_method=SASL authentication method
+allowanonymouslogin=allow anonymous login
+unixhierarchysep=mailbox names separator
+hashimapspool=hash mailbox partitions
+autocreatequota=default quota for new mailboxes    
+quotawarn=quota amount over which to send messages
+altnamespace=use alternate namespace
+sharedprefix=shared folder prefix
+virtdomains=use virtual domains
+defaultdomain=default domain
+localdomains=local domains
+update=save changes
+apply=apply changes
+numbers_only=only numbers, please
+numbers_between=only numbers between
+
+name=name
+path=path
+folders=folders
+delete_partition=WARNING: do you really want to delete this partition?
+
+create_mbox=create mailbox
+subfolder=subfolder
+partition=partition
+create=create
+mbox_user=user's mailbox
+this_mbox=this mailbox/folder
+unknown_mbox=unknown mailbox
+copy_mbox=copy in
+copy=copy
+move_mbox=move in
+move=move
+rebuild=reconstruct
+requota2=recheck quotas
+requota1=recheck quota
+delete=delete
+set=update
+set_quota=set quota
+used=used
+user=user
+messages=messages
+mbox_size=size of mailbox
+folder_size=size of folder
+remove=remove
+conf_del_mailbox=WARNING: Do you really want to delete this mailbox/folder?
+conf_del_acl=Do you really want to remove the ACLs for user
+    
+no_perl_libs=Error: some Perl modules are missing

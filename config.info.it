@@ -1,0 +1,10 @@
+imap_port=Porta del server Cyrus-IMAP,0
+admin_user=Username amministratore Cyrus-IMAP,5
+admin_password=Password amministratore Cyrus-IMAP,16
+cyrus_conf_path=Percorso di cyrus.conf,8
+imapd_conf_path=Percorso di imapd.conf,8
+imap_path=Cartella di lavoro IMAP,7
+lib_path=Cartella delle utility e delle librerie di Cyrus,7
+initscript=Script per avviare/fermare il server Cyrus-IMAP,8
+sync_mbox=Sincronizza creazione/eliminazione delle mailbox con gli account di sistema?,1,1-Si,0-No
+chkupdate=Controllo nuove versioni?,1,1-Si,0-No
